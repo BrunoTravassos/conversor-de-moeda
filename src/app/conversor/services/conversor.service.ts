@@ -44,8 +44,8 @@ export class ConversorService {
     }
     return (1/conversaoResponse.rates[conversao.moedaPara]).toFixed(4);
   }
-  
-  dataCotacao(conversaoResponse: ConversaoResponse, conversao: Conversao): string {
+
+  dataCotacao(conversaoResponse: ConversaoResponse): string {
     if (conversaoResponse === undefined) {
       return ' ';
     }
